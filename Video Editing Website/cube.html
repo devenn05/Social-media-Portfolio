@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Rotating Cube with Videos</title>
+    <style>
+        body {
+            background: #000;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1500px;
+        }
+
+        .scene {
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+
+        .cube {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            animation: rotateCube 8s infinite linear;
+        }
+
+        @keyframes rotateCube {
+            from { transform: rotateX(0deg) rotateY(0deg); }
+            to { transform: rotateX(360deg) rotateY(360deg); }
+        }
+
+        .face {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: #111;
+            border: 0.5px solid #fff;
+        }
+
+        .face video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Adjusted translateZ values to half of cube size (150px) */
+        .front  { transform: rotateY(  0deg) translateZ(150px); }
+        .back   { transform: rotateY(180deg) translateZ(150px); }
+        .right  { transform: rotateY( 90deg) translateZ(150px); }
+        .left   { transform: rotateY(-90deg) translateZ(150px); }
+        .top    { transform: rotateX( 90deg) translateZ(150px); }
+        .bottom { transform: rotateX(-90deg) translateZ(150px); }
+ 
+    </style>
+</head>
+<body>
+    <div class="scene">
+        <div class="cube">
+            <div class="face front"><video src="Videos/1.mp4" autoplay loop muted></video></div>
+            <div class="face back"><video src="Videos/2.mp4" autoplay loop muted></video></div>
+            <div class="face right"><video src="Videos/3.mp4" autoplay loop muted></video></div>
+            <div class="face left"><video src="Videos/4.mp4" autoplay loop muted></video></div>
+            <div class="face top"><video src="Videos/5.mp4" autoplay loop muted></video></div>
+            <div class="face bottom"><video src="Videos/6.mp4" autoplay loop muted></video></div>
+        </div>
+    </div>
+</body>
+</html>

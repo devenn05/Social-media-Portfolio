@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Navbar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="bghome-clip.mp4" type="video/mp4">
+    </video>
+    <nav class="navbar">
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fas fa-phone"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fas fa-share-alt"></i></a>
+        </div>
+
+        <!-- Logo -->
+        <div class="logo">
+            <span class="line">D.H</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section 1-->
+    <section id="section1">
+       <div class="slider-container">
+            <div class="slider-wrapper swiper-wrapper">
+                <div class="slider-item swiper-slide">
+                    <div class="slide-content">
+                        <h3 class="slide-subtitle">Photography</h3>
+                        <h2 class="slide-title">Photos</h2>
+                        <p class="slide-description">A glimpse of my world, through a camera</p>
+                        <a href="#" class="slide-button"><span>Photos</span></a>
+                    </div>
+                    <!-- 3D Rotating Slider -->
+                    <div class="banner">
+                        <div class="slider" style="--quantity: 10">
+                            <div class="item" style="--position: 1"><img src="photos/1.jpg" alt=""></div>
+                            <div class="item" style="--position: 2"><img src="photos/2.jpg" alt=""></div>
+                            <div class="item" style="--position: 3"><img src="photos/3.jpg" alt=""></div>
+                            <div class="item" style="--position: 4"><img src="photos/4.jpg" alt=""></div>
+                            <div class="item" style="--position: 5"><img src="photos/5.jpg" alt=""></div>
+                            <div class="item" style="--position: 6"><img src="photos/6.jpeg" alt=""></div>
+                            <div class="item" style="--position: 7"><img src="photos/7.jpg" alt=""></div>
+                            <div class="item" style="--position: 8"><img src="photos/8.jpeg" alt=""></div>
+                            <div class="item" style="--position: 9"><img src="photos/9.jpeg" alt=""></div>
+                            <div class="item" style="--position: 10"><img src="photos/10.jpeg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-item swiper-slide">
+                    <div class="slide-content">
+                        <h3 class="slide-subtitle">Videography</h3>
+                        <h2 class="slide-title">Video Editing Portfolio</h2>
+                        <p class="slide-description">Transforming raw footage into compelling stories.</p>
+                        <a href="#" class="slide-button"><span>Portfolio</span></a>
+                    </div>
+                    <!-- 3D Rotating Video Cube -->
+    <div class="video-cube-container">
+        <div class="scene">
+            <div class="cube">
+                <div class="face front"><video src="Videos/1.mp4" autoplay loop muted></video></div>
+                <div class="face back"><video src="Videos/2.mp4" autoplay loop muted></video></div>
+                <div class="face right"><video src="Videos/3.mp4" autoplay loop muted></video></div>
+                <div class="face left"><video src="Videos/4.mp4" autoplay loop muted></video></div>
+                <div class="face top"><video src="Videos/5.mp4" autoplay loop muted></video></div>
+                <div class="face bottom"><video src="Videos/6.mp4" autoplay loop muted></video></div>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <ul class="slider-pagination">
+                    <div class="slider-indicator">
+
+                    </div>
+                    <li class="slider-tab">
+                        Section I
+                    </li>
+                    <li class="slider-tab">
+                        Section II
+                    </li>
+                </ul>
+            </div>
+            <div class="slider-navigation">
+
+            </div>
+        </div> 
+    </section>
+
+    <div class="section-border"></div>
+
+    <section id="section2">
+    </section>
+
+
+    <section id="section3"></section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
