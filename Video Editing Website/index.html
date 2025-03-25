@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Bungee+Tint&family=Monoton&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Bungee+Tint&family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Rampart+One&family=Ruslan+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Rubik+Burned&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Burned&family=Rubik+Puddles&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
     <video autoplay muted loop id="bg-video">
@@ -15,16 +27,21 @@
     <nav class="navbar">
         <!-- Social Media Icons -->
         <div class="social-icons">
-            <a href="#"><i class="fas fa-envelope"></i></a>
-            <a href="#"><i class="fas fa-phone"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fas fa-share-alt"></i></a>
+            <a href="mailto:rahoolhirlekar@gmail.com?subject="><i class="fas fa-envelope"></i></a>
+            <div class="phone-container">
+                <a href="#" class="phone-btn" id="phone-btn" onclick="copyPhoneNumber()">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <div class="phone-card">
+                    <span class="phone-number" id="phone-number">+91 81699 24722</span>
+                    <span style="font-size: 10px;"> Click to Copy</span>
+                    <!-- Remove the copy button since we're using the icon -->
+                </div>
+            </div>
+            <a href="https://www.instagram.com/sceniqsnap/"><i class="fab fa-instagram"></i></a>
         </div>
 
-        <!-- Logo -->
-        <div class="logo">
-            <span class="line">D.H</span>
-        </div>
+
 
         <!-- Navigation Links -->
         <ul class="nav-links">
@@ -102,14 +119,6 @@
             </div>
         </div> 
     </section>
-
-    <div class="section-border"></div>
-
-    <section id="section2">
-    </section>
-
-
-    <section id="section3"></section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
