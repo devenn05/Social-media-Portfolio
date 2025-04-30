@@ -45,18 +45,3 @@ Built as a learning project while studying web development, this website demonst
 - Interactive UI/UX elements
 
 The project showcases my progression in frontend development skills while creating an engaging tourism showcase.
-
-## Project Structure
-Switzerland/
-├── Images/
-│ ├── Cantons/ # Images of all Swiss cantons
-│ ├── about-us-1.jpg # Banner images
-│ ├── about-us-2.jpg
-│ ├── food.jpg # Card images
-│ ├── housing.jpg
-│ ├── tourism.jpg
-│ └── Logo.svg # Site logo
-├── index.html # Main HTML file
-├── script.js # All JavaScript functionality
-├── style.css # Complete styling
-└── README.md # This file
